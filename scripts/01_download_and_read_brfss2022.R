@@ -4,8 +4,8 @@ suppressPackageStartupMessages({
   library(haven)
 })
 
-source("/Users/zhengsijie/LinearRegressionGemini/healthiui/R/config.R")
-source("/Users/zhengsijie/LinearRegressionGemini/healthiui/R/utils_io.R")
+source("proj_root/R/config.R")
+source("proj_root/R/utils_io.R")
 
 opt_list <- list(
   make_option(c("-o", "--outdir"), type = "character", default = output_dir_default,

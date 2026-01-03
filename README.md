@@ -19,7 +19,7 @@ risk-stratification-brfss/
 │   ├── 04_table2_logistic_or.R
 │   ├── 05_key_findings.R
 │   ├── 06_tableS1_unweighted_vs_weighted.R
-│   ├── 07_model_performance_auc_brier.R
+│   ├── 07_model_performance_brier.R
 │   ├── 08_explanation_stability.R
 │   ├── 09_risk_stratification_calibration.R
 │   ├── 10_actionable_whatif.R
@@ -85,10 +85,9 @@ Supports concise reporting of core results in the accompanying paper.
 Performs a sensitivity analysis comparing survey-weighted and unweighted logistic regression estimates.  
 Evaluates robustness of effect estimates to the inclusion of survey design weights.
 
-### `07_model_performance_auc_brier.R`
+### `07_model_performance_brier.R`
 Evaluates model-level performance with an emphasis on calibration.  
 Computes predicted risks from the fitted model and summarizes calibration using the Brier score.  
-(The AUC component has been removed; calibration is the primary focus.)
 
 ### `08_explanation_stability.R`
 Assesses the stability of model-based explanations under resampling or perturbation.  
@@ -132,6 +131,5 @@ All data used are publicly available and contain no proprietary or confidential 
 This repository supports the empirical analysis presented in:
 
 *Interpretable Cardiovascular Risk Stratification from BRFSS 2022 to Inform Intelligent Health Interfaces*  
-HealthIUI 2026 Workshop
 
 The codebase provides a fully reproducible implementation of the analyses reported in the paper, including descriptive statistics, interpretable regression modeling, sensitivity analysis, calibration assessment, risk tiering, explanation stability, and actionable risk messaging illustrations.

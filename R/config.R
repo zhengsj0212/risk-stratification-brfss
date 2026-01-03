@@ -1,4 +1,4 @@
-project_root <- "/Users/zhengsijie/LinearRegressionGemini/healthiui"
+project_root <- "proj_root"
 
 data_raw_dir <- file.path(project_root, "data", "raw")
 data_derived_dir <- file.path(project_root, "data", "derived")
